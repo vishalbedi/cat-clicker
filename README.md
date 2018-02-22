@@ -1,6 +1,7 @@
 # CatClicker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+Hands on with AngularJS 4.0 by making a cat-clicker application, because who doesn't love cats.
 
 ## Development server
 
