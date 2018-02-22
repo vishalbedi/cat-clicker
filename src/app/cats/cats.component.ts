@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cat } from '../cat';
-import { CATS } from '../mock-cats';
+import { CatService } from '../cat.service';
 
 @Component({
   selector: 'app-cats',
@@ -8,11 +7,16 @@ import { CATS } from '../mock-cats';
   styleUrls: ['./cats.component.css']
 })
 export class CatsComponent implements OnInit {
-  cats: Cat[] = CATS;
-  selectedCat: Cat = this.cats[0];
-  constructor() { }
+  cats: Cat[];
+  selectedCat: Cat;
+  constructor(private catService: CatService) { }
+
+  getCats(): void {
+    this.cats = this.catService.getCats();
+  }
 
   ngOnInit() {
+    this.getCats();
   }
 
   onCatSelected: void (cat: Cat)  {
