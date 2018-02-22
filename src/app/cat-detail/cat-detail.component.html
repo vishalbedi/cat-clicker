@@ -1,0 +1,10 @@
+<div *ngIf="cat">
+  <h2> {{ cat.name | uppercase }} </h2>
+  <div>
+    <img width="600" [alt]="selectedCat.name" (click)="clickHandler(cat)"
+      [src]="cat.imageUrl" />
+      <p>
+        {{ cat.name }} clicked {{cat.clickCounter}} times
+      </p>
+  </div>
+</div>

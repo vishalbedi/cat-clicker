@@ -23,8 +23,4 @@ export class CatsComponent implements OnInit {
   onCatSelected: void (cat: Cat)  {
     this.selectedCat = cat;
   }
-
-  clickHandler: void (cat: Cat)  {
-    cat.clickCounter++;
-  }
 }

@@ -5,14 +5,4 @@
   </li>
 </ul>
 
-
-<div *ngIf="selectedCat">
-  <h2> {{ selectedCat.name | uppercase }} </h2>
-  <div>
-    <img width="600" [alt]="selectedCat.name" (click)="clickHandler(selectedCat)"
-      [src]="selectedCat.imageUrl" />
-      <p>
-        {{ selectedCat.name }} clicked {{selectedCat.clickCounter}} times
-      </p>
-  </div>
-</div>
+<app-cat-detail [cat]="selectedCat"></app-cat-detail>

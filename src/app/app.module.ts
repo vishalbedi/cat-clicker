@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CatsComponent } from './cats/cats.component';
 
 import { CatService } from './cat.service';
+import { CatDetailComponent } from './cat-detail/cat-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CatsComponent
+    CatsComponent,
+    CatDetailComponent
   ],
   imports: [
     BrowserModule
