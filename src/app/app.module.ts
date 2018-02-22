@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CatsComponent } from './cats/cats.component';
 
-import { CatService } from '.cat.service';
+import { CatService } from './cat.service';
 
 
 @NgModule({

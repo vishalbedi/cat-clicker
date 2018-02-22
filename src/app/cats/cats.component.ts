@@ -15,12 +15,11 @@ export class CatsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onCatSelected: void (cat: Cat) {
+  onCatSelected: void (cat: Cat)  {
     this.selectedCat = cat;
   }
 
-  clickHandler: void (cat: Cat) {
+  clickHandler: void (cat: Cat)  {
     cat.clickCounter++;
   }
-
 }
