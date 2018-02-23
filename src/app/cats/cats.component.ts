@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CatService } from '../cat.service';
-
+import { Cat } from '../cat';
 @Component({
   selector: 'app-cats',
   templateUrl: './cats.component.html',
@@ -19,8 +19,7 @@ export class CatsComponent implements OnInit {
   ngOnInit() {
     this.getCats();
   }
-
-  onCatSelected: void (cat: Cat)  {
+  onCatSelected: Function = (cat: Cat) => {
     this.selectedCat = cat;
   }
 }
