@@ -13,7 +13,7 @@ export class CatDetailComponent implements OnInit {
   ngOnInit() {
   }
 
-  clickHandler: void (cat: Cat)  {
+  clickHandler: void (cat: Cat) {
     cat.clickCounter++;
   }
 }
