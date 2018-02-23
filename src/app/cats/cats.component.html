@@ -1,8 +1,11 @@
-<h2>Cats</h2>
-<ul class='cats'>
-  <li *ngFor="let cat of cats" (click)="onCatSelected(cat)">
-    <span class="badge"> {{cat.id}}</span> {{cat.name}}
-  </li>
-</ul>
-
-<app-cat-detail class="details" [cat]="selectedCat"></app-cat-detail>
+<div class="clearfix">
+  <div>
+    <ul class='column cats'>
+      <li *ngFor="let cat of cats" (click)="onCatSelected(cat)">
+        <span class="badge"> {{cat.id}}</span> {{cat.name}}
+      </li>
+    </ul>
+  </div>
+  <app-cat-detail class="column details" [cat]="selectedCat"></app-cat-detail>  
+</div>
+<app-cat-edit [cat]="selectedCat"></app-cat-edit>
